@@ -97,58 +97,102 @@
 
         <!--Buy Ticket INFO Section-->
         <section id="buy-ticket" class="bg-[#F7F8F8]  border-[#1DD100] border-t-4 rounded-t-3xl">
-            <div class="ml-4 mr-4 lg:ml-32 lg:mr-32">           
-                <div class="max-w-[700px] mx-auto pt-24 pb-8">
-                    <h1 class="mb-5 text-4xl font-extrabold text-[#030712] text-center">Flixbus</h1>
-                    <p>
-                        Our buses are equipped with large and comfortable seats, Wi-Fi, sockets and toilets.We make sure that you arrive in a pleasant way and at the specified time - 9 out of 10 of our buses arrive on time.
-                    </p>
-                </div>
-            
-                <!--Bus Details-->
-                <div class="bus-details bg-[#fff] rounded-3xl flex ">
-                    <div class="bus-details-left w-3/4">
-                        <div class="flex justify-between text-center p-8">
-                            <div class="flex gap-4">
-                                <img src="images/bus-logo.png">
-                                <div class="ml-12 text-left">
-                                    <h2 class="font-bold">Greenline Paribahan</h2> 
-                                    <h3>Coach-009-WEB ! AC_Business</h3>
+            <div class="ticket-info-container">
+                <div class="ml-4 mr-4 lg:ml-32 lg:mr-32">           
+                    <div class="max-w-[700px] mx-auto pt-24 pb-8">
+                        <h1 class="mb-5 text-4xl font-extrabold text-[#030712] text-center">Flixbus</h1>
+                        <p>
+                            Our buses are equipped with large and comfortable seats, Wi-Fi, sockets and toilets.We make sure that you arrive in a pleasant way and at the specified time - 9 out of 10 of our buses arrive on time.
+                        </p>
+                    </div>
+                
+                    <!--Bus Details-->
+                    <div class="bus-details bg-[#fff] rounded-3xl flex ">
+                        <div class="bus-details-left w-3/4">
+                            <div class="flex justify-between text-center p-8">
+                                <div class="flex gap-4">
+                                    <img src="images/bus-logo.png">
+                                    <div class="ml-12 text-left">
+                                        <h2 class="font-bold">Greenline Paribahan</h2> 
+                                        <h3>Coach-009-WEB ! AC_Business</h3>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn"><span><img src="images/seat-green.png" > </span> <span id="seat-left"></span> Seat left</button>
                                 </div>
                             </div>
-                            <div>
-                                <button class="btn"><span><img src="images/seat-green.png" > </span> <span id="seat-left"></span> Seat left</button>
+                            <div class="info bg-[#F7F8F8] rounded-2xl ml-8 p-8 mb-16">
+                                <div class="flex justify-between text-center py-4 border-dashed border-b-2">
+                                    <p>Route</p>
+                                    <p>Dhaka - Sylhet</p>
+                                </div>
+                                <div class="flex justify-between text-center py-4 border-dashed border-b-2">
+                                    <p>Departure Time</p>
+                                    <p>9:00 PM</p>
+                                </div>
+                                <div class="flex justify-between text-center py-4">
+                                    <button class="btn bg-gray-200">Boarding Point - Laxmipur</button>
+                                    <button class="btn bg-gray-200">Dropping Point - Bogura</button>
+                                    <button class="btn bg-gray-200">Est. Time - 11 Hour</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="info bg-[#F7F8F8] rounded-2xl ml-8 p-8 mb-16">
-                            <div class="flex justify-between text-center py-4 border-dashed border-b-2">
-                                <p>Route</p>
-                                <p>Dhaka - Sylhet</p>
-                            </div>
-                            <div class="flex justify-between text-center py-4 border-dashed border-b-2">
-                                <p>Departure Time</p>
-                                <p>9:00 PM</p>
-                            </div>
-                            <div class="flex justify-between text-center py-4">
-                                <button class="btn bg-gray-200">Boarding Point - Laxmipur</button>
-                                <button class="btn bg-gray-200">Dropping Point - Bogura</button>
-                                <button class="btn bg-gray-200">Est. Time - 11 Hour</button>
-                            </div>
+    
+                        <img src="images/info-devider.png" >
+    
+                        <div class="bus-details-right w-1/4 text-center">
+                            <img class="m-auto pt-28" src="images/fare.png">
+                            <h3 class="font-bold text-3xl text-center">550 Taka</h3>
+                            <p>Per Seat</p>
                         </div>
-                    </div>
-
-                    <img src="images/info-devider.png" >
-
-                    <div class="bus-details-right w-1/4 text-center">
-                        <img class="m-auto pt-28" src="images/fare.png">
-                        <h3 class="font-bold text-3xl text-center">550 Taka</h3>
-                        <p>Per Seat</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Buy Ticket  Section-->
      
+        <!--Buy Ticket  Section-->
+            <div class="ticket-container p-8 ml-4 mr-4 lg:ml-32 lg:mr-32 bg-[#fff] rounded-3xl mt-8">
+                <div class="left-section w-3/5">
+                    <div class="flex justify-center">
+                        <div class="w-full border-dashed border-r-2 p-4">
+                          <h2 class="text-lg font-semibold mb-4">Select your Seat</h2>
+                          <div class="flex justify-between text-center py-4 border-dashed border-y-2">
+                            <p class="flex"><span><img src="images/seat-gray.png"></span>Available</p>
+                            <p class="flex"><span><img src="images/seat-green-filled.png" alt=""></span>Selected</p>
+                        </div>
+                          <table class="w-full" style="border-collapse: separate; border-spacing: 20px;">
+                            <tr class="text-center">
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th class="bg-gray-200 rounded p-2 "><img class="m-auto" src="images/steering-wheel.png" alt=""></th>
+                            </tr>
+                            <tr class="text-center">
+                              <td>A</td>
+                              <td id="a1" class="bg-gray-200 rounded p-2">A1</td>
+                              <td id="a2" class="bg-gray-200 rounded p-2">A2</td>
+                              <td id="a3" class="bg-gray-200 rounded p-2">A3</td>
+                              <td id="a4" class="bg-gray-200 rounded p-2">A4</td>
+                            </tr>
+                            <tr class="text-center">
+                              <td>B</td>
+                              <td id="b1" class="bg-gray-200 rounded p-2">B1</td>
+                              <td id="b2" class="bg-gray-200 rounded p-2">B2</td>
+                              <td id="b3" class="bg-gray-200 rounded p-2">B3</td>
+                              <td id="b4" class="bg-gray-200 rounded p-2">B4</td>
+                            </tr>
+                            <!-- will add rest!!  -->
+                          </table>
+                        </div>
+                    </div>
+                </div>
+    
+                <!--Right Section-->
+                <div class="right-section w-2/5">
+                    
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer class="footer p-10 bg-neutral text-neutral-content">
