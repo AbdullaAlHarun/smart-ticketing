@@ -55,8 +55,10 @@
             </div>
           </div>
     </header>
-    <main class="ml-4 mr-4 lg:ml-32 lg:mr-32">
-        <section class="best-offer mt-28">
+
+    <main>
+        <!--Best Offer Section!-->
+        <section class="best-offer mt-28 ml-4 mr-4 lg:ml-32 lg:mr-32">
             <h2 class="text-center text-3xl font-bold">Best offers for you</h2>
             <div class="flex lg:flex-col-2 flex-col-1 gap-6 h-56 mt-12 ">
                 <div class="left w-2/4 rounded-3xl">
@@ -92,11 +94,85 @@
                 <button class="btn text-[#1DD100] border-[#1DD100] bg-[#fff]">See All Offers</button>
             </div>
         </section>
-        <section id="buy-ticket">
 
+        <!--Buy Ticket INFO Section-->
+        <section id="buy-ticket" class="bg-[#F7F8F8]  border-[#1DD100] border-t-4 rounded-t-3xl">
+            <div class="ml-4 mr-4 lg:ml-32 lg:mr-32">           
+                <div class="max-w-[700px] mx-auto pt-24 pb-8">
+                    <h1 class="mb-5 text-4xl font-extrabold text-[#030712] text-center">Flixbus</h1>
+                    <p>
+                        Our buses are equipped with large and comfortable seats, Wi-Fi, sockets and toilets.We make sure that you arrive in a pleasant way and at the specified time - 9 out of 10 of our buses arrive on time.
+                    </p>
+                </div>
+            
+                <!--Bus Details-->
+                <div class="bus-details bg-[#fff] rounded-3xl flex ">
+                    <div class="bus-details-left w-3/4">
+                        <div class="flex justify-between text-center p-8">
+                            <div class="flex gap-4">
+                                <img src="images/bus-logo.png">
+                                <div class="ml-12 text-left">
+                                    <h2 class="font-bold">Greenline Paribahan</h2> 
+                                    <h3>Coach-009-WEB ! AC_Business</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn"><span><img src="images/seat-green.png" > </span> <span id="seat-left"></span> Seat left</button>
+                            </div>
+                        </div>
+                        <div class="info bg-[#F7F8F8] rounded-2xl ml-8 p-8 mb-16">
+                            <div class="flex justify-between text-center py-4 border-dashed border-b-2">
+                                <p>Route</p>
+                                <p>Dhaka - Sylhet</p>
+                            </div>
+                            <div class="flex justify-between text-center py-4 border-dashed border-b-2">
+                                <p>Departure Time</p>
+                                <p>9:00 PM</p>
+                            </div>
+                            <div class="flex justify-between text-center py-4">
+                                <button class="btn bg-gray-200">Boarding Point - Laxmipur</button>
+                                <button class="btn bg-gray-200">Dropping Point - Bogura</button>
+                                <button class="btn bg-gray-200">Est. Time - 11 Hour</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="images/info-devider.png" >
+
+                    <div class="bus-details-right w-1/4 text-center">
+                        <img class="m-auto pt-28" src="images/fare.png">
+                        <h3 class="font-bold text-3xl text-center">550 Taka</h3>
+                        <p>Per Seat</p>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!--Buy Ticket  Section-->
+     
 
     </main>
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+        <nav>
+          <h6 class="footer-title">Services</h6> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Legal</h6> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
     <script src="js/utility.js"></script>
     <script src="js/app.js"></script>
 </body>
