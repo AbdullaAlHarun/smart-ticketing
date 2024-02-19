@@ -12,11 +12,13 @@ function selectSeat(seatId) {
     const couponSection = document.getElementById('coupon'); // Get the coupon section
 
     // Check if the seat selection should proceed
-    if (selectedSeats.length < 4 && seatElement.classList.contains('bg-gray-200')) {
+    if (selectedSeats.length <= 4 && seatElement.classList.contains('bg-gray-200')) {
         seatElement.classList.remove('bg-gray-200');
         seatElement.classList.add('bg-green-500');
         seatLeftElement.textContent = currentSeatLeft - 1; // Decrease available seats
-        selectedSeatsElement.textContent = selectedSeats.length + 1;
+        selectedSeatsElement.textContent = selectedSeats.length;
+
+        
         // Create ticket description HTML
         const ticketHtml = `
             <table class="w-full>
@@ -37,7 +39,6 @@ function selectSeat(seatId) {
         seatElement.classList.add('bg-gray-200');
         seatLeftElement.textContent = currentSeatLeft + 1; // Increase available seats
         selectedSeatsElement.textContent = selectedSeats.length - 1;
-       
        
        
         // Remove ticket description from price-container
