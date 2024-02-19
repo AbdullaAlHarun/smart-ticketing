@@ -11,7 +11,7 @@ function selectSeat(seatId) {
     const priceContainer = document.getElementById('price-container');
     const couponSection = document.getElementById('coupon'); // Get the coupon section
 
-    // Check if the seat selection should proceed
+    //  Seat selection
     if (selectedSeats.length <= 4 && seatElement.classList.contains('bg-gray-200')) {
         seatElement.classList.remove('bg-gray-200');
         seatElement.classList.add('bg-green-500');
